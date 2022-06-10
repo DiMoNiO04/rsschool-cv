@@ -23,3 +23,13 @@ function sum(a, b) {
   return a + b;
 }
 ```
+
+# Experience
+No experience
+
+# Education
++ **University:** Belarusian state university Informatics and Radioelectronics, Programmable Mobile System
++ **Courses:** [Stepik HTML/CSS for begginers](https://stepik.org/cert/1427588?auth=login)
+
+# English
+**A2**
