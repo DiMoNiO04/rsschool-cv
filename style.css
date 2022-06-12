@@ -426,6 +426,11 @@ textarea {
 
 /*Header styles start*/
 .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
     background-color: #5b725f;
 }
 .header-container{
@@ -470,6 +475,7 @@ textarea {
 /*Main styles start*/
 /*Section profile start*/
 .section-profile{
+    margin-top: 95px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -520,15 +526,55 @@ textarea {
 
 
 /*Section contact start*/
+.sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .section{
-    padding: 20px;
+    width: calc(50% - 50px);
+    padding: 35px 10px;
+    border-bottom: 2px solid #374139 ;
+    margin-bottom: 440px;
 }
 .section-title{
     font-size: 24px;
     font-weight: normal;
     color: #374139;
     letter-spacing: 8px;
+    padding-bottom: 16px;
 }
+.nav-contact-item{
+    padding-bottom: 8px;
+    font-size: 20px;
+    color:#5b725f;
+}
+.fa-solid, .fa-brands{
+    padding-right: 16px;
+    color:#5b725f;
+}
+.strong-text{
+    color: #374139;
+    font-weight: bold;
+}
+.nav-contact-link{
+    text-decoration: none;
+    color: #5b725f;
+}
+.nav-contact-link:hover{
+   padding-left: 20px;
+    text-decoration: underline;
+    transition: 0.25s all linear;
+    color: #374139;
+}
+
+.section-text{
+    color: black;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
 /*Section contact end*/
 
 /*Main styles end*/
