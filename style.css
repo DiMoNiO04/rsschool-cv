@@ -516,7 +516,19 @@ textarea {
     font-size: 24px;
     padding-top: 16px;
 }
-
-
 /*Section profile end*/
+
+
+/*Section contact start*/
+.section{
+    padding: 20px;
+}
+.section-title{
+    font-size: 24px;
+    font-weight: normal;
+    color: #374139;
+    letter-spacing: 8px;
+}
+/*Section contact end*/
+
 /*Main styles end*/
