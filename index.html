@@ -40,6 +40,9 @@
                         <a href="#" class="header-link">Code</a>
                     </li>
                     <li class="header-item">
+                        <a href="#" class="header-link">Courses</a>
+                    </li>
+                    <li class="header-item">
                         <a href="#" class="header-link">Projects</a>
                     </li>
                     <li class="header-item">
@@ -83,46 +86,46 @@
                     <div class="contact-data">
                        <nav class="contact-data-nav">
                             <ul class="nav-contact-menu">
-                                <li class="nav-contact-item">
+                                <li class="nav-item">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <strong class="strong-text">Location: </strong>
                                     Minsk, Belarus
                                 </li>
-                                <li class="nav-contact-item">
+                                <li class="nav-item">
                                     <i class="fa-brands fa-discord"></i>
                                     <strong class="strong-text">Discord: </strong>
                                     DiMoNiO
                                 </li>
-                                <li class="nav-contact-item">
-                                    <a href="https://vk.com/drazumov0" class="nav-contact-link">
+                                <li class="nav-item">
+                                    <a href="https://vk.com/drazumov0" class="nav-link">
                                         <i class="fa-brands fa-vk"></i>
                                         <strong class="strong-text">VKontakte: </strong>
                                         Дмитрий Разумов
                                     </a>
                                 </li>
-                                <li class="nav-contact-item">
-                                    <a href="https://www.instagram.com/dimonio__1/" class="nav-contact-link">
+                                <li class="nav-item">
+                                    <a href="https://www.instagram.com/dimonio__1/" class="nav-link">
                                         <i class="fa-brands fa-instagram-square"></i>
                                         <strong class="strong-text">Instagram: </strong>
                                         dimonio__1
                                     </a>
                                 </li>
-                                <li class="nav-contact-item">
-                                    <a href="https://web.telegram.org/k/" class="nav-contact-link">
+                                <li class="nav-item">
+                                    <a href="https://web.telegram.org/k/" class="nav-link">
                                         <i class="fa-brands fa-telegram"></i>
                                         <strong class="strong-text">Telegram: </strong>
                                             Razumov Dmitriy
                                     </a>
                                 </li>
-                                <li class="nav-contact-item">
-                                    <a href="mailto:dmitrij.razumov.04@mail.ru" class="nav-contact-link">
+                                <li class="nav-item">
+                                    <a href="mailto:dmitrij.razumov.04@mail.ru" class="nav-link">
                                         <i class="fa-solid fa-at"></i>
                                         <strong class="strong-text">Email: </strong>
                                             dmitrij.razumov.04@mail.ru
                                     </a>
                                 </li>
-                                <li class="nav-contact-item">
-                                    <a href="https://github.com/DiMoNiO04" class="nav-contact-link">
+                                <li class="nav-item">
+                                    <a href="https://github.com/DiMoNiO04" class="nav-link">
                                         <i class="fa-brands fa-github-square"></i>
                                         <strong class="strong-text">Git-hub: </strong>
                                             DiMoNiO04
@@ -139,14 +142,226 @@
                     <h2 class="section-title">
                         Summary
                     </h2>
-                    <div class="section-text">
-                        I am a first-year student at BSUIR with a degree in Programmable Mobile Systems. I like programming. It's exciting and interesting. I have taken several online and offline HTML/CSS courses and now I would like to learn more about this area. My goal is to be good at HTML/CSS and JavaScript and learn a few libraries to qualify for the Junior Frontend Developer position. I would like to work under an experienced developer to gain practical and theoretical experience. Therefore, I will be glad to join the creation of open source projects.
+                    <p class="section-text">
+                        I am a first-year student at BSUIR with a degree in Programmable Mobile Systems. 
+                        I like programming. It's exciting and interesting. I have taken several online and
+                        offline HTML/CSS courses and now I would like to learn more about this area. My goal 
+                        is to be good at HTML/CSS and JavaScript and learn a few libraries to qualify for the
+                        Junior Frontend Developer position. I would like to work under an experienced developer 
+                        to gain practical and theoretical experience. Therefore, I will be glad to join the
+                        creation of open source projects.
+                    </p>
+                </section>
+                <!--Section summary end-->
+
+
+                <!--Section skills start-->
+                <div class="section">
+                    <h2 class="section-title">
+                        Skills
+                    </h2>
+                    <nav class="skills-nav">
+                        <ul class="nav-skills-item">
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Programming Languages: </strong>
+                                    C++, Python
+                            </li>
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Web development: </strong>
+                                    HTML5, CSS3, JavaScript
+                            </li>
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Framework: </strong>
+                                    Bootstrap
+                            </li>
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Version Control: </strong>
+                                    Git, Github
+                            </li>
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Graphics: </strong>
+                                    Figma, AutoCad
+                            </li>
+                            <li class="nav-skills-point">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Networks: </strong>
+                                    Cisco Packet Tracer
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--Section skills end-->
+
+
+                <!--Section code start-->
+                <section class="section">
+                    <h2 class="section-title">
+                        Code
+                    </h2>
+                    <code class="code">
+                    <pre>
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header__nav');
+    const menuCloseItem = document.querySelector('.header__nav-close');
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header__nav-active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header__nav-active');
+    });
+}());</pre></code>
+                </section>
+                <!--Section code end-->
+
+
+                <!--Section courses start-->
+                <section class="section">
+                    <h2 class="section-title">
+                        Courses
+                    </h2>
+                    <nav class="courses-nav">
+                        <ul class="nav-courses-item">
+                            <li class="nav-item">
+                                <a href="https://stepik.org/course/38218/syllabus" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Stepik: </strong>
+                                        Web development for beginners HTML/CSS
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://stepik.org/course/63085/syllabus" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Stepik: </strong>
+                                        Python Programming Indie Course
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://ru.code-basics.com/languages/css" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Code-basic: </strong>
+                                        Interactive course on CSS:
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://ru.code-basics.com/languages/html" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Code-basic: </strong>
+                                        Interactive course on HTML:
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="books">
+                        <h2 class="section-title">Books</h2>
+                        <i class="fa-solid fa-check"></i>
+                        <strong class="strong-text">Grokaem Algorithms Aditya Bhargava</strong>
+                    </div>
+
+                    <div class="сertificatest">
+                        <h2 class="section-title">Certificates</h2>
+                        <a href="https://stepik.org/cert/1427588" class="nav-link">
+                            <i class="fa-solid fa-check"></i>
+                            <strong class="strong-text">Web development for beginners HTML/CSS</strong>
+                        </a>
                     </div>
                 </section>
-    
-                <!--Section summary end-->
+                <!--Section courses end-->
+
+
+                <!--Section projects start-->
+                <section class="section">
+                    <h2 class="section-title">
+                        Projects
+                    </h2>
+                    <nav class="contact-data-nav">
+                        <ul class="nav-project-menu">
+                            <li class="nav-item">
+                                <a href="https://vk.com/drazumov0" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Huston</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/dimonio__1/" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Foxgram</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://web.telegram.org/k/" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Lendin travel in Japan </strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="mailto:dmitrij.razumov.04@mail.ru" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Pide PiperNet</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/DiMoNiO04" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">Swimming-pool</strong>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/DiMoNiO04" class="nav-link">
+                                    <i class="fa-solid fa-check"></i>
+                                    <strong class="strong-text">My CV</strong>
+                                </a>
+                            </li>
+                        </ul>
+                   </nav>
+                </section>
+                <!--Section projects end-->
+
+
+                <!--Section education start-->
+                <section class="section last-section">
+                    <h2 class="section-title">
+                        Education
+                    </h2>
+                    <nav class="education-nav">
+                        <ul class="nav-educationitem">
+                            <li class="nav-item">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Secondary school №11 in Soligorsk (grades 1 to 3)</strong>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Secondary school №14 in Soligorsk (grades 4 to 7)</strong>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text">Secondary school №8 in Soligorsk (grades 8 to 11)</strong>
+                            </li>
+                            <li class="nav-item">
+                                <i class="fa-solid fa-check"></i>
+                                <strong class="strong-text education-text">Belarusian State University of Informatics and Radioelectronics, Faculty of Computer Design, Programmable Mobile Systems</strong>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+                <!--Section education end-->
+
+                <!--Section english start-->
+                <section class="section last-section">
+                    <h2 class="section-title">
+                        English
+                    </h2>
+                    <i class="fa-solid fa-check"></i>
+                    <strong class="strong-text education-text">Level А2 (EF SET)</strong>
+                </section>
+                <!--Section english end-->
             </div>
-           
         </div>
     </main>
     <!--Main end-->

@@ -454,7 +454,7 @@ textarea {
     text-decoration: none;
     font-family: 'Lato';
     font-style: normal;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300;
     padding: 14px 24px 0 0;
 }
@@ -469,6 +469,7 @@ textarea {
     color: #28352a;
     text-decoration:underline;
 }
+
 /*Header styles finish*/
 
 
@@ -488,6 +489,12 @@ textarea {
 .profile-main-title{
     text-transform: uppercase;
     font-size: 28px;
+    color:#5b725f;
+}
+.profile-text{
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
 }
 .profile-title{
     font-size: 22px;
@@ -496,12 +503,8 @@ textarea {
     width: 120px;
     height: 55px;
 }
-.profile-text{
-    color:#5b725f;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
-    color: #5b725f;
+.profile-title{
+    color:#829985;
 }
 .profile-foto{
     padding-right: 40px;
@@ -535,33 +538,36 @@ textarea {
     width: calc(50% - 50px);
     padding: 35px 10px;
     border-bottom: 2px solid #374139 ;
-    margin-bottom: 440px;
 }
 .section-title{
     font-size: 24px;
     font-weight: normal;
-    color: #374139;
+    color: #829985;
     letter-spacing: 8px;
     padding-bottom: 16px;
 }
-.nav-contact-item{
+.nav-item{
     padding-bottom: 8px;
-    font-size: 20px;
     color:#5b725f;
+}
+.nav-contact-item:last-child{
+    padding-bottom: 0;
 }
 .fa-solid, .fa-brands{
     padding-right: 16px;
     color:#5b725f;
 }
 .strong-text{
-    color: #374139;
-    font-weight: bold;
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
 }
-.nav-contact-link{
+.nav-link{
     text-decoration: none;
-    color: #5b725f;
+    color: #829985;
+    font-size: 20px;
 }
-.nav-contact-link:hover{
+.nav-link:hover{
    padding-left: 20px;
     text-decoration: underline;
     transition: 0.25s all linear;
@@ -574,7 +580,33 @@ textarea {
     font-weight: normal;
     line-height: 1.4;
 }
-
 /*Section contact end*/
 
+
+/*Section skills start*/
+.nav-skills-point{
+    padding-bottom: 8px;
+    font-size: 20px;
+    color: #829985;
+}
+.nav-skills-point:last-child{
+    padding-bottom: 0;
+}
+/*Section skills end*/
+
+.code{
+    text-align: left;
+    line-height: 1.3;
+    font-size: 18px;
+    font-weight: normal;
+}
+.fa-check{
+    font-size: 20px;
+}
+.books, .сertificatest{
+    padding-top: 20px;
+}
+.last-section{
+    margin-bottom: 80px;
+}
 /*Main styles end*/
