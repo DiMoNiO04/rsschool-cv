@@ -362,7 +362,7 @@ textarea {
 /*Reset styles finish*/
 
 
-/*Styles start*/
+/*Fonts start*/
 /* lato-300 - latin */
 /* lato-300 - latin */
 @font-face {
@@ -403,235 +403,223 @@ textarea {
          url('../assets/fontslato-v23-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../assets/fontslato-v23-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
   }
-/*Styles end*/
+/*Fonts end*/
 
 
-/*All styles start*/
+/*Common styles start*/
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 1200px; /*Максимальная ширина контейнера*/
+    margin: 0 auto;    /*Выравнивание по центру*/
+    padding: 0 20px;   /*Внутренние боковые отступы*/
 }
-
 .body{
-    font-family: 'Lato';
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.2;
-    font-weight: normal;
-    color:black;
+    font-family: 'Lato'; /*Семейство шрифтов*/
+    font-style: normal;  /*Стиль семейства*/
+    font-size: 16px;     /*Размер шрифта*/  
+    line-height: 1.2;    /*Расстояние между строками*/
+    font-weight: normal; /*Толщина шрифта*/
+    color:black;       /*Цвет шрифта*/
 }
-/*All styles finish*/
+.items:last-child{
+    padding-right: 0;   /*Убираем правый отступ у последней ссылки в хедер*/
+}
+.items:hover{
+    transform: scale(1.25);      /*Ссылка при наведении увеличивается*/
+    transition: .25s all linear; /*Плавное увеличение ссылок*/
+}
+.logo{
+    width: 120px;        /*Ширина логотипов*/
+    height: 55px;        /*Высота логотипов*/
+    padding-right: 40px; /*Внутренний правый оступ*/
+}
+/*Common styles finish*/
 
 
 /*Header styles start*/
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: #5b725f;
+    position: fixed;             /*При скролле фиксируется*/
+    top: 0;                      /*В верху*/
+    left: 0;                     /*В левом углу*/
+    width: 100%;                 /*Ширина на весь экран*/
+    z-index: 10;                 /*Слой*/
+    background-color: #5b725f; /*Цвет*/
 }
 .header-container{
-    padding: 20px 0;
-    display: flex;
+    padding: 20px;                 /*Отступы внутренние*/
+    display: flex;                 
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-.logos{
-    width: 120px;
-    padding-right: 40px;
+    justify-content: space-between;/*Равномерное распределение блоков*/
+    align-items: center;           /*Выравнивание блоков по центру*/
 }
 .header-list{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    padding-top: 14px;
+    justify-content: flex-end; /*Друг за другом и прижимаются к началу*/
 }
-.header-link{
-    color: white;
-    text-decoration: none;
-    font-family: 'Lato';
-    font-style: normal;
-    font-size: 22px;
-    font-weight: 300;
-    padding: 14px 24px 0 0;
+.header-footer-link{
+    color: white;         /*Цвет ссылок*/
+    text-decoration: none;  /*Нижнее подчеркивание убираем*/
+    font-size: 22px;        /*Размер шрифта*/
+    font-weight: 300;       /*Толщина шрифта*/
+    padding: 14px 24px 0 0; /*Внутренние отступы ссылок*/
 }
-.header-item:last-child{
-    padding-right: 0;
+.header-footer-link:hover{
+    color: #28352a;          /*Ссылки при наведении менют цвет*/
+    text-decoration:underline; /*Ссылки при наведении имеют нижнее подчеркивание*/
 }
-.header-item:hover{
-    transform: scale(1.25);
-    transition: .25s all linear;
-}
-.header-link:hover{
-    color: #28352a;
-    text-decoration:underline;
-}
-
 /*Header styles finish*/
 
 
 /*Main styles start*/
 /*Section profile start*/
 .section-profile{
-    margin-top: 95px;
-    display: flex;
+    margin-top: 95px;                   /*Внешний оступ от хедера*/
+    display: flex;         
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 50px 0;
-    border-bottom: 10px solid #374139;
+    justify-content: space-around;       /*Равномерно распределение по ширине*/
+    padding: 50px 0;                     /*Внутренние оступы*/
+    border-bottom: 10px solid #374139; /*Нижняя граница в виде рамка(полоса)*/
 }
 .section-profile-text{
-    padding-top: 60px;
-}
-.profile-main-title{
-    text-transform: uppercase;
-    font-size: 28px;
-    color:#5b725f;
-}
-.profile-text{
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 3px;
-}
-.profile-title{
-    font-size: 22px;
-}
-.logo{
-    width: 120px;
-    height: 55px;
-}
-.profile-title{
-    color:#829985;
+    padding-top: 60px;  /*Внутренний верхний оступ от текста*/
 }
 .profile-foto{
-    padding-right: 40px;
-    padding-left: 40px;
+    padding: 0 40px;  /*Внутренний оступы от фото*/
 }
 .my-foto{
-    width: 200px;
-    height: 200px;
-    border: 3px solid #374139;
-    border-radius: 50%;
+    width: 200px;                /*Ширина фото*/
+    height: 200px;               /*Высота фото*/
+    border: 3px solid #374139; /*Рамка вокруг фото*/
+    border-radius: 50%;          /*Закругление делаем круг*/
+}
+.profile-text{
+    font-weight: bold;    /*Жирный шрифт в секции*/
+    text-align: center;   /*Выравнивание текста по центру*/
+    letter-spacing: 5px;  /*Отсупы между буквами*/
 }
 .profile-main-title{
-    font-size: 32px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #5b725f;
+    text-transform: uppercase;           /*Все заглавные буквы*/
+    color:#5b725f;                     /*Задаем цвет*/
+    font-size: 32px;                     /*Размер*/
+    padding-bottom: 16px;                /*Нижний внутренний оступ*/
+    border-bottom: 1px solid #5b725f;  /*Нижния линия граница*/
 }
 .profile-title{
-    font-size: 24px;
-    padding-top: 16px;
+    color:#829985;   /*Цвет текста*/
+    font-size: 24px;   /*Размер текста*/
+    padding-top: 16px; /*Верхний внутренний оступ*/
 }
 /*Section profile end*/
 
 
-/*Section contact start*/
+/*Sections start*/
 .sections{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between;  /*Равномерное распределение по блоку*/
 }
 .section{
-    width: calc(50% - 50px);
-    padding: 35px 10px;
-    border-bottom: 2px solid #374139 ;
+    width: calc(50% - 50px);              /*На всю ширину экрана делаем две секции по 50% разделенных пространством 50пх*/
+    padding: 35px 10px;                   /*Внутренние отступы*/
+    border-bottom: 2px solid #374139 ;  /*Нижняя рамка граница*/
 }
 .section-title{
-    font-size: 24px;
-    font-weight: normal;
-    color: #829985;
-    letter-spacing: 8px;
-    padding-bottom: 16px;
-}
-.nav-item{
-    padding-bottom: 8px;
-    color:#5b725f;
-}
-.nav-contact-item:last-child{
-    padding-bottom: 0;
+    font-size: 24px;     /*Размер заголовка текста*/
+    font-weight: normal; /*Толщина текста*/
+    color: #829985;    /*Цвет текста*/
+    letter-spacing: 8px; /*Расстояние между буквами*/
+    padding-bottom: 16px;/*Внутренний нижний оступ*/
 }
 .fa-solid, .fa-brands{
-    padding-right: 16px;
-    color:#5b725f;
+    padding-right: 16px;  /*Внутренний правый отсуп от иконочного шрифта*/
+    color:#5b725f;      /*Цвет иконочного шрифта*/
 }
-.strong-text{
-    color: black;
-    font-weight: normal;
-    font-size: 20px;
+.strong-text{  
+    color: black;      /*Цвет текста*/
+    font-weight: normal; /*Ширина текста*/
+    font-size: 20px;     /*Размер текста*/
+}
+.nav-item{
+    padding-bottom: 8px; /*Нижний оступ в списке от пунктов*/
+    color:#5b725f;     /*Цвет*/
+}
+.nav-text{
+    font-size: 20px; /*Размер текста ссылок*/
 }
 .nav-link{
-    text-decoration: none;
-    color: #829985;
-    font-size: 20px;
+    text-decoration: none; /*Убираем нижнее подчеркивание*/
+    color: #829985;      /*Цвет*/
+    font-size: 20px;       /*Размер текста*/
 }
 .nav-link:hover{
-   padding-left: 20px;
-    text-decoration: underline;
-    transition: 0.25s all linear;
-    color: #374139;
+   padding-left: 20px;            /*При наведение на ссылки выдвижение вправо*/
+    text-decoration: underline;   /*Появляется нижнее подчеркивание*/
+    transition: 0.25s all linear; /*Постепенное изменение цвета*/
+    color: #374139;             /*Изменяем цвет ссылок*/
 }
 
+/*Section summary*/
 .section-text{
-    color: black;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.4;
+    color: black;      /*Цвет текста в секциях*/
+    font-size: 18px;     /*Размер шрифта*/
+    font-weight: normal; /*Толщина шрифта*/
+    line-height: 1.4;    /*Расстояние межлу строчками текста*/
 }
-/*Section contact end*/
 
-
-/*Section skills start*/
+/*Section skills*/
 .nav-skills-point{
-    padding-bottom: 8px;
-    font-size: 20px;
-    color: #829985;
+    padding-bottom: 8px;  /*Нижний отступ от пунктов*/
+    font-size: 20px;      /*Размер шрифта*/
+    color: #829985;     /*Цвет*/
 }
 .nav-skills-point:last-child{
-    padding-bottom: 0;
+    padding-bottom: 0;  /*Убираем внутренний нижний отступ у последнего пунктов*/
 }
-/*Section skills end*/
 
+/*Section code*/
 .code{
-    text-align: left;
-    line-height: 1.3;
-    font-size: 18px;
-    font-weight: normal;
+    text-align: left;    /*Выравние кода по левому краю*/
+    line-height: 1.3;    /*Расстояние между строками кода*/
+    font-size: 18px;     /*Размер шрифта*/
+    font-weight: normal; /*Толщина шрифта*/
 }
+
+/*Section courses*/
 .fa-check{
-    font-size: 20px;
+    font-size: 20px;  /*Размер галочек в списках*/
 }
 .books, .сertificatest{
-    padding-top: 20px;
+    padding-top: 20px;  /*Внутренний верхний оступ*/
 }
 .last-section{
-    margin-bottom: 80px;
+    margin-bottom: 50px;  /*Внещний оступ перед футером у последних блоков*/
 }
+/*Sections styles end*/
 /*Main styles end*/
 
-.footer{
-    background-color: #5b725f;
-    padding: 20px;
-}
 
+/*Footer styles start*/
+.footer{
+    background-color: #5b725f;  /*Цвет футера*/
+    padding: 20px 0;              /*Внутренние оступы*/
+}
 .footer-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /*Равномерное распределение по ширине*/
+    align-items: center;            /*Распредление блоком по центру*/
 }
 .year-github{
-    color: #fff;
-    font-size: 24px;
+    color: #fff;   /*Цвет*/
+    font-size: 24px; /*Размер текста*/
     display: flex;
     flex-wrap: wrap;
 }
 .rsschool-logo:hover{
-    transform: scale(1.2);
-    transition: 0.2s all;
+    transform: scale(1.2);  /*При наведении лого увеличивается в размере*/
+    transition: 0.2s all;   /*Плавное изменение размера при наведении*/
 }
-.github-link{
-    padding-left: 24px;
+.year{
+    padding-right: 24px;  /*Внутренний правый отсуп от года в футере*/
 }
+/*Footer styles end*/
