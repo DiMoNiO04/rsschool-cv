@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.12,
-* Autoprefixer: v10.4.4
-* Browsers: last 4 version
-*/
-
 /*Reset styles start*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -430,11 +423,7 @@ html {
     padding-right: 0;   /*Убираем правый отступ у последней ссылки в хедер*/
 }
 .header-item:hover{
-    -webkit-transform: scale(1.25);
-        -ms-transform: scale(1.25);
-            transform: scale(1.25);      /*Ссылка при наведении увеличивается*/
-    -webkit-transition: .25s all linear;
-    -o-transition: .25s all linear;
+    transform: scale(1.25);      /*Ссылка при наведении увеличивается*/
     transition: .25s all linear; /*Плавное увеличение ссылок*/
 }
 .logo{
@@ -467,27 +456,15 @@ html {
 }
 .header-container{
     padding: 20px;                 /*Отступы внутренние*/
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;                 
-    -ms-flex-wrap: wrap;                 
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;/*Равномерное распределение блоков*/
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;           /*Выравнивание блоков по центру*/
+    flex-wrap: wrap;
+    justify-content: space-between;/*Равномерное распределение блоков*/
+    align-items: center;           /*Выравнивание блоков по центру*/
 }
 .header-list{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; /*Друг за другом и прижимаются к началу*/
+    flex-wrap: wrap;
+    justify-content: flex-end; /*Друг за другом и прижимаются к началу*/
 }
 .header-link{
     color: white;         /*Цвет ссылок*/
@@ -522,9 +499,7 @@ html {
 }
 .burger-line-second{
     top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 /*Header styles finish*/
 
@@ -532,16 +507,10 @@ html {
 /*Main styles start*/
 /*Section profile start*/
 .section-profile{
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    align-items: center;
     display: flex;         
-    -ms-flex-wrap: wrap;         
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;       /*Равномерно распределение по ширине*/
+    flex-wrap: wrap;
+    justify-content: space-around;       /*Равномерно распределение по ширине*/
     padding: 50px 0;                     /*Внутренние оступы*/
     border-bottom: 10px solid #374139; /*Нижняя граница в виде рамка(полоса)*/
 }
@@ -553,15 +522,10 @@ html {
     height: 260px;               /*Высота фото*/
     border: 3px solid #374139; /*Рамка вокруг фото*/
     border-radius: 50%;          /*Закругление делаем круг*/
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
 }
 .my-foto:hover{
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-transition: .2s all linear;
-    -o-transition: .2s all linear;
+    transform: scale(1.3);
     transition: .2s all linear;
     border-radius: 0;
 }
@@ -587,14 +551,9 @@ html {
 
 /*Sections start*/
 .sections{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;  /*Равномерное распределение по блоку*/
+    flex-wrap: wrap;
+    justify-content: space-between;  /*Равномерное распределение по блоку*/
 }
 .section{
     width: calc(50% - 50px);              /*На всю ширину экрана делаем две секции по 50% разделенных пространством 50пх*/
@@ -614,15 +573,11 @@ html {
     color:#5b725f;      /*Цвет иконочного шрифта*/
 }
 .nav-item{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding-bottom: 8px; /*Нижний оступ в списке от пунктов*/
     color:#5b725f;     /*Цвет*/
 }
 .nav-link{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     text-decoration: none; /*Убираем нижнее подчеркивание*/
     color: #829985;      /*Цвет*/
@@ -630,16 +585,12 @@ html {
 .nav-link:hover{
     padding-left: 10px;            /*При наведение на ссылки выдвижение вправо*/
     text-decoration: underline;   /*Появляется нижнее подчеркивание*/
-    -webkit-transition: 0.2s all linear;
-    -o-transition: 0.2s all linear;
     transition: 0.2s all linear; /*Постепенное изменение цвета*/
     color: #374139;             /*Изменяем цвет ссылок*/
 }
 
 /*Section skills*/
 .nav-skills-point{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     position: relative;
     margin-bottom: 8px;  /*Нижний отступ от пунктов*/
@@ -677,26 +628,16 @@ html {
     padding: 20px 0;              /*Внутренние оступы*/
 }
 .footer-container{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; /*Равномерное распределение по ширине*/
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;            /*Распредление блоком по центру*/
+    flex-wrap: wrap;
+    justify-content: space-between; /*Равномерное распределение по ширине*/
+    align-items: center;            /*Распредление блоком по центру*/
 }
 .year-github{
     color: #fff;   /*Цвет*/
     font-size: 24px; /*Размер текста*/
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     padding-right: 24px;
 }
 .github-link{
@@ -705,19 +646,11 @@ html {
 }
 .github-link:hover{
     padding-left: 0;
-    -webkit-transform: scale(1.25);
-        -ms-transform: scale(1.25);
-            transform: scale(1.25);
-    -webkit-transition: 0.2s all linear;
-    -o-transition: 0.2s all linear;
+    transform: scale(1.25);
     transition: 0.2s all linear;
 }
 .rsschool-logo:hover{
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);  /*При наведении лого увеличивается в размере*/
-    -webkit-transition: 0.2s all;
-    -o-transition: 0.2s all;
+    transform: scale(1.2);  /*При наведении лого увеличивается в размере*/
     transition: 0.2s all;   /*Плавное изменение размера при наведении*/
 }
 .year{
@@ -732,9 +665,7 @@ html {
         font-size: 16px;
     }
     .year-github{
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        align-items: center;
         font-size: 16px;
     }
 }
@@ -752,17 +683,13 @@ html {
         background-color:#5b725f;
         z-index: 11;
         padding: 75px;
-        -webkit-transform: translateY(100%);
-            -ms-transform: translateY(100%);
-                transform: translateY(100%);
+        transform: translateY(100%);
     }
     .header-item:hover{
         padding-left: 0;
     }
     .header-nav-active{
-        -webkit-transform: translateY(0);
-            -ms-transform: translateY(0);
-                transform: translateY(0);
+        transform: translateY(0);
     }
     .header-item{
         width: 100%;
@@ -792,14 +719,10 @@ html {
         top: 50%;
     }
     .header-nav-close-line:first-child{
-        -webkit-transform: translateY(-50%) rotate(45deg);
-            -ms-transform: translateY(-50%) rotate(45deg);
-                transform: translateY(-50%) rotate(45deg);
+        transform: translateY(-50%) rotate(45deg);
     }
     .header-nav-close-line:last-child{
-        -webkit-transform: translateY(-50%) rotate(-45deg);
-            -ms-transform: translateY(-50%) rotate(-45deg);
-                transform: translateY(-50%) rotate(-45deg);
+        transform: translateY(-50%) rotate(-45deg);
     }
 }
 
@@ -878,9 +801,7 @@ html {
         font-size: 18px;   /*Размер специальности названия*/
     }
     .footer-container{
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;  /*Инфа в футере по центру равномерно*/
+        justify-content: center;  /*Инфа в футере по центру равномерно*/
     }
     .header-nav-close{
         left: 330px;  /*Расположение крестика*/
