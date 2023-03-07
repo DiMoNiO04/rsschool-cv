@@ -16,6 +16,7 @@ I am a second-year student of the **Belarusian State University of Informatics a
 
 
 ## Skills and Proficiency:
+
 + HTML/CSS
 + JavaScript
 + C++
@@ -25,3 +26,7 @@ I am a second-year student of the **Belarusian State University of Informatics a
 + Git/GitHub
 + VS Code, Visual Studio
 + Basic PHP
+
+## Code example:
+
+An example of my code, you can see on my github account [DiMoNiO04](https://github.com/DiMoNiO04)
