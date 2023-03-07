@@ -44,3 +44,16 @@ An example of my code, you can see on my github account [DiMoNiO04](https://gith
 + [Momentum](https://dimonio04.github.io/Portfolio-sytes/Momentum)
 + [Codejam-Helper](https://dimonio04.github.io/Portfolio-sytes/Codejam)
 + [Online-zoo](https://dimonio04.github.io/Portfolio-sytes/Online-zoo/)
+
+
+## Education and Courses:
+
++ RSSchool "JS/FE Pre-School 2022Q2" [Sertificate](https://app.rs.school/certificate/38nnel4i)
++ Stepik "Web development for beginners HTML/CSS" [Sertificate](https://stepik.org/cert/1427588)
++ RSSchool "JavaScript/Front-end 2023Q1" (in progress)
++ BSUIR "Programable Mobile Systems" (in progress)
+
+## Languages:
+
++ #### English: A2
++ #### Russian: Native
